@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sean Gor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Courier", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url("https://static.vecteezy.com/system/resources/previews/001/310/861/original/abstract-digital-science-background-free-vector.jpg");
+        background-size: cover; /* Ensure the background covers the entire screen */
+        background-attachment: fixed; /* Keeps the image fixed while scrolling */
+        background-position: center;
+        animation: bodyBackground 15s ease infinite;
+        color: white; /* Default text color for better contrast */
+      }
+
+      header {
+        background-color: rgba(0, 128, 0, 0.8); /* Slightly transparent background */
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      }
+      header h1 {
+        font-size: 36px;
+        position: relative;
+      }
+
+      header h1::after {
+        content: "";
+        display: block;
+        width: 60%;
+        height: 4px;
+        background: linear-gradient(90deg, #ff7f50, #ffa500, #ff7f50); /* Fancy gradient */
+        margin: 10px auto 0; /* Center underline */
+        border-radius: 2px; /* Rounded edges */
+      }
+
+      nav {
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        color: orange;
+        background-color: blue;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 15px;
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+        border-radius: 30px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      nav a:hover {
+        background-color: gray;
+        color: white;
+      }
+
+      .content-container {
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      img {
+        max-width: 80%; /* Ensure the image scales properly */
+        height: auto;
+        display: block;
+        margin: 20px auto; /* Center the image */
+      }
+
+      footer {
+        background-color: rgba(0, 128, 0, 0.8); 
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      footer a {
+        color: lightblue;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sean Gor <h1> <h2> Aspiring Software/Cybersecurity Developer</h2>
+    </header>
+    <nav>
+      <a href = "http://192.168.1.168:8080/main" > Home</a>
+      <a href = "http://192.168.1.168:8080/aboutme" > My Story</a>
+      <a href = "http://192.168.1.168:8080/resume" > My Resume</a>
+      <a href = "http:192.168.1.168:8080/myprojects" > My Projects</a>
+      <a href = "http://192.168.1.168:8080/contact" > Contact Me</a>     
+    </nav>
+    <main>
+      <img
+        src="https://www.gettingsmart.com/wp-content/uploads/2017/06/Program-Code-Feature-Image.jpg"
+        alt="Coding Image"
+      />
+      <div class="content-container">
+        <h3>
+          Welcome to my Website. Click on any of the sections above to learn
+          more
+        </h3>
+      </div>
+    </main>
+    <footer>
+      <p>© 2024 Sean G's Website. All rights reserved.</p>
+      <p>
+        <a href="/aboutme">My story</a> |
+        <a
+          href="https://www.linkedin.com/in/sean-g-ab59792a2/"
+          target="blank"
+          >My LinkedIn</a
+        >
+        |
+        <a href="https://github.com/Computercoder125/" target="blank"
+          >My GitHub</a
+        >
+        | <a href="/privacy-policy">Privacy Policy</a>
+      </p>
+    </footer>
+  </body>
+</html>
