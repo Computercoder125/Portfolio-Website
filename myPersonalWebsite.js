@@ -57,7 +57,7 @@ app.get("/resume", function (req, res)
  {
     readAndServe("./contact.html", res)
  });
- app.get("/myProjects", function (req, res)
+ app.get("/myprojects", function (req, res)
  {
     readAndServe("./MyProjects.html", res);
  });
