@@ -42,7 +42,7 @@ app.use(
   }
 // Route for homepage (main.html)
 app.get("/main", function (req, res) {
-    readAndServe("./main.html", res);
+    readAndServe("./index.html", res);
   });
 //Route for about me page (aboutme.html)
 app.get("/aboutme", function (req, res)
