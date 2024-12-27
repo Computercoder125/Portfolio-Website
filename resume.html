@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume</title>
+    <title>Find me At These Links!</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -26,32 +26,18 @@
       }
 
       header {
-        background-color: rgba(0, 128, 0, 0.8); /* Slightly transparent background */
+        background-color: rgba(0, 128, 0, 0.8); /* Darker background */
         color: white;
         padding: 20px 0;
         text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      header h1 {
-        font-size: 36px;
-        position: relative;
-      }
-
-      header h1::after {
-        content: "";
-        display: block;
-        width: 60%;
-        height: 4px;
-        background: linear-gradient(90deg, #ff7f50, #ffa500, #ff7f50); /* Fancy gradient */
-        margin: 10px auto 0; /* Center underline */
-        border-radius: 2px; /* Rounded edges */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
       }
 
       nav {
-        background-color: rgba(255, 255, 255, 0.9);
+        color: green;
+        background-color: white;
         text-align: center;
         padding: 10px 0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
       nav a {
@@ -61,7 +47,7 @@
         padding: 10px 20px;
         margin: 0 15px;
         font-size: 18px;
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
         border-radius: 30px;
         transition: background-color 0.3s, transform 0.3s;
       }
@@ -71,17 +57,36 @@
         color: white;
       }
 
-      .content-container {
-        color: white;
+      h2 {
+        font-family: "Courier", sans-serif;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url("https://static.vecteezy.com/system/resources/previews/001/310/861/original/abstract-digital-science-background-free-vector.jpg");
+        background-size: cover; /* Ensure the background covers the entire screen */
+        background-attachment: fixed; /* Keeps the image fixed while scrolling */
+        background-position: center;
+        animation: bodyBackground 15s ease infinite;
+        color: white; /* Default text color for better contrast */
         text-align: center;
-        padding: 40px 20px;
-        font-size: 24;
       }
 
-      .content-container h2,
-      .content-container h3,
-      .content-container h4 {
-        color: white;
+      .content {
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+      }
+
+      .content a {
+        color: orange;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .content a:hover {
+        text-decoration: underline;
       }
 
       footer {
@@ -89,6 +94,9 @@
         padding: 20px;
         text-align: center;
         color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
       }
 
       footer a {
@@ -104,55 +112,52 @@
   </head>
   <body>
     <header>
-      <h1>My Resume</h1>
+      <h1>Find Me at These Links!</h1>
     </header>
     <nav>
-      <a href="https://computercoder125.github.io/Portfolio-Website/main">Home</a>
-      <a href="https://computercoder125.github.io/Portfolio-Website/aboutme">My Story</a>
-      <a href="https://computercoder125.github.io/Portfolio-Website/resume">Find Me At These Links</a>
-      <a href="https://computercoder125.github.io/Portfolio-Website/myprojects">My Projects</a>
-      <a href="https://computercoder125.github.io/Portfolio-Website/contact">Contact Me</a>
+      <a href="http://192.168.1.168:8080/main">Home</a>
+      <a href="http://192.168.1.168:8080/aboutme">My Story</a>
+      <a href="http://192.168.1.168:8080/resume"> Find me at these links</a>
+      <a href="http://192.168.1.168:8080/myprojects">My Projects</a>
+      <a href="http://192.168.1.168:8080/contact">Contact Me</a>
     </nav>
-    <main>
-      <div class="content-container">
-        <h2>
-          <a
-            href="http://localhost:8080/Sean_Gor_Resume.pdf"
-            target="_blank"
-            >Sean Gor's Resume</a
-          >
-        </h2>
-        <p>Please see the above link for my resume.</p>
-        <h3>
-          <a
-            href="https://www.linkedin.com/in/sean-g-ab59792a2/"
-            target="_blank"
-            >Sean Gor's LinkedIn</a
-          >
-        </h3>
-        <h4>
-          <a
-            href="https://github.com/Computercoder125/"
-            target="_blank"
-            >Sean Gor's GitHub</a
-          >
-        </h4>
-      </div>
-    </main>
+    <div class="content">
+      <h2>
+        <a
+          href="http://localhost:8080/Sean_Gor_Resume.pdf"
+          target="_blank"
+          >Download My Resume</a
+        >
+      </h2>
+      <h3>
+        <a
+          href="https://www.linkedin.com/in/sean-g-ab59792a2/"
+          target="_blank"
+          >Visit My LinkedIn Profile</a
+        >
+      </h3>
+      <h3>
+        <a
+          href="https://github.com/Computercoder125/"
+          target="_blank"
+          >Explore My GitHub Repositories</a
+        >
+      </h3>
+      
+    </div>
     <footer>
       <p>© 2024 Sean G's Website. All rights reserved.</p>
       <p>
         <a href="/aboutme">My story</a> |
         <a
           href="https://www.linkedin.com/in/sean-g-ab59792a2/"
-          target="blank"
+          target="_blank"
           >My LinkedIn</a
-        >
-        |
-        <a href="https://github.com/Computercoder125/" target="blank"
+        > |
+        <a href="https://github.com/Computercoder125/" target="_blank"
           >My GitHub</a
-        >
-        | <a href="/privacy-policy">Privacy Policy</a>
+        > |
+        <a href="/privacy-policy">Privacy Policy</a>
       </p>
     </footer>
   </body>
