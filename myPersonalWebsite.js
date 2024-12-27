@@ -90,5 +90,5 @@ app.get("/resume", function (req, res)
 });
 
 app.listen(port, "0.0.0.0", function () {
-  console.log("NodeJS app listening on http://192.168.1.168:" + port + "/main");
+  console.log("NodeJS app listening on https://computercoder125.github.io/Portfolio-Website/main");
 });
