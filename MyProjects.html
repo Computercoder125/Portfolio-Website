@@ -21,6 +21,8 @@
         background-attachment: fixed;
         background-position: center;
         color: white;
+        font-size: 24;
+        display: flex; /* To align items in the same row */
       }
 
       header {
@@ -54,6 +56,7 @@
         background-color: gray;
         color: white;
       }
+
         h2{
           background-color: white;
           color: black;
@@ -81,12 +84,19 @@
           text-align: center
         }
         .link a{
-          color: blue;
-          text-decoration: underline;
+          background-color: green;
+          padding: 10px 20px;
+          margin: 0 15px;
+          border-radius: 30px;
+          text-decoration: none;
         }
         .link a:hover {
           background-color: gray;
          text-decoration: underline;
+        }
+        .img{
+          width: 700px;
+          height: 500px;
         }
         .passcode-imgs {
         display: flex; /* Align items horizontally */
@@ -96,7 +106,6 @@
       .passcode-imgs img {
         max-width: 400px; /* Adjust the size of the images */
         height: auto; /* Maintain aspect ratio */
-        border: 2px solid black; /* Optional styling */
       }
       footer {
         background-color: rgba(0, 128, 0, 0.8);
@@ -107,8 +116,8 @@
 
       footer a {
         color: lightblue;
+        text-decoration: none;
         margin: 0 10px;
-        text-decoration: none
       }
 
       footer a:hover {
@@ -121,9 +130,9 @@
           <h1> Sample Projects done inside and outside of the classroom </h1>
       </header>
       <nav>
-        <a href = "http://192.168.1.168:8080/main" > Home</a>
+      <a href = "http://192.168.1.168:8080/main" > Home</a>
       <a href = "http://192.168.1.168:8080/aboutme" > My Story</a>
-      <a href = "http://192.168.1.168:8080/resume" > My Resume</a>
+      <a href = "http://192.168.1.168:8080/resume" > Find me at these links</a>
       <a href = "http://192.168.1.168:8080/myprojects" > My Projects</a>
       <a href = "http://192.168.1.168:8080/contact" > Contact Me</a>    
     </nav>
@@ -131,11 +140,23 @@
       <h2> Online Student Tutoring Platform</h2>
       <br>
       <br>
-      <img
-      src = ""
+      <img class = "img"
+      src = "http://192.168.1.168:8080/signup.png"
       alt = "Tutoring"
       >
-        <h2> Hangman </h2>
+      <img class = "img"
+      src = "http://192.168.1.168:8080/tutors.png"
+      alt = "Tutoring"
+      >
+    </p> This three-tier client-server program is a convenient online tutoring service for users to book any tutoring sessions. 
+    They first have to create an account (shown in the left picture), and after that they are taken to the 
+    main webpage where they can book an appointment, search for tutors, or delete an already booked
+    appointment. Feel free to see the full program and try it out via the link below! </p>
+    <div class = "link">
+      <p>
+        <a href="https://github.com/Computercoder125/DBMSFinalProject" target="_blank">Tutoring Website Program</a> </h2>
+      </p>
+        <h3> Hangman </h3>
         <br>
         <br>
         <img
@@ -152,22 +173,22 @@
             <a href="https://github.com/Computercoder125/PersonalProjects/blob/main/HangmanGameInC.pdf" target="_blank">Hangman Program</a> </h2>
           </p>
         </div>
-        <h3> Passcode </h3>
+        <h4> Passcode </h4>
         <br>
         <br>
         <div class = "passcode-imgs">
         <img
-        src = "http://localhost:3000/passcodeGame.png"
+        src = "http://192.168.1.168:8080/passcodeGame.png"
         alt = "Passcode"
         >
         <img
         class = "transparent-image"
-        src = "https://www.downloadclipart.net/large/7780-blue-arrow-design.png"
+        src = "http://www.downloadclipart.net/large/7780-blue-arrow-design.png"
         alt = "Arrow"
         >
         <img
         class = "wrong-passcode"
-        src = "http://localhost:3000/wrongPasscode.png"
+        src = "http://192.168.1.168:8080/wrongPasscode.png"
         alt = "Wrong Passcode"
         >
         </div>
@@ -184,7 +205,7 @@
         </div>
         <br>
         <br>
-        <footer style="background-color: #159332; padding: 20px; text-align: center; margin-top: 20px;">
+        <footer style="background-color: rgba(0,128, 0, 0.8); padding: 20px; text-align: center; margin-top: 20px;">
           <p>© 2024 Sean G's Website. All rights reserved.</p>
           <p>
             <a href="/aboutme">My story</a> | 
