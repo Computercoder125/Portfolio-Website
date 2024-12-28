@@ -41,7 +41,7 @@ app.use(
     });
   }
 // Route for homepage (main.html)
-app.get("/main", function (req, res) {
+app.get("/", function (req, res) {
     readAndServe("./index.html", res);
   });
 //Route for about me page (aboutme.html)
