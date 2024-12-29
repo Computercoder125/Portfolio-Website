@@ -66,7 +66,7 @@ app.get("/resume", function (req, res)
     res.send("Blah Blah Blah!");
  });
 
- app.post("/contact", (req, res) => {
+ app.post("/api/contact", (req, res) => {
     const {firstName, lastName, email, Message} = req.body;
     if(!firstName)
         return res.status(400).send("Missing First Name");
