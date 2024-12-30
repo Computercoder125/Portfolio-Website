@@ -1,33 +1,31 @@
-const mysql = require("mysql2/promise"); // Use mysql2 with promise support
-
 export default async function handler(req, res) {
     if (req.method === "POST") {
+        // Extract data from the request body
         const { firstName, lastName, email, Message } = req.body;
 
+        // Validate input fields
         if (!firstName || !lastName || !email || !Message) {
-            return res.status(400).send("All fields are required.");
+            return res.status(400).json({ error: "All fields are required." });
         }
 
         try {
-            // Create a connection pool
-            const pool = mysql.createPool({
-                host: process.env.DB_HOST, // Use environment variables
-                user: process.env.DB_USER,
-                password: process.env.DB_PASSWORD,
-                database: process.env.DB_NAME,
-                connectionLimit: 10, // Limit connections to avoid overload
+            // Simulate saving data (log it to the server console)
+            console.log("New contact submission:", {
+                firstName,
+                lastName,
+                email,
+                Message,
             });
 
-            const query =
-                "INSERT INTO contactData (firstName, lastName, email, Message) VALUES (?, ?, ?, ?)";
-            await pool.query(query, [firstName, lastName, email, Message]);
-
-            res.send("Thank you! Your response has been recorded.");
+            // Respond with a success message
+            res.status(200).json({ message: "Thank you! Your response has been recorded." });
         } catch (err) {
-            console.error("Error saving to database:", err);
-            res.status(500).send("Database error");
+            // Handle unexpected errors
+            console.error("Error processing the request:", err);
+            res.status(500).json({ error: "An unexpected error occurred." });
         }
     } else {
-        res.status(405).send("Method not allowed");
+        // Handle unsupported HTTP methods
+        res.status(405).json({ error: "Method not allowed" });
     }
 }
